@@ -1,0 +1,6 @@
+
+State Machine - |uart_rx|state
+Name state.ST_start state.ST_end state.ST_data 
+state.ST_start 0 0 0 
+state.ST_data 1 0 1 
+state.ST_end 1 1 0 

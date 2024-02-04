@@ -1,0 +1,107 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim
+vfrequency_scaling
+Z1 !s110 1697473244
+!i10b 1
+!s100 iNbb[?]5UD[?P7bLWYYQ:0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Ic1LO:]ImV<g3OlloBOGXU3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1695470466
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/frequency_scaling.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/frequency_scaling.v
+!i122 2
+L0 20 24
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1697473244.000000
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/frequency_scaling.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/frequency_scaling.v|
+!i113 1
+Z6 o-vlog01compat -work work
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm
+Z8 tCvgOpt 0
+vpwm_generator
+R1
+!i10b 1
+!s100 Co4Xh?>dS0aDYgDNRfl1m2
+R2
+IGS@SB]hFSU^ocKW26F`I;1
+R3
+R0
+w1697473173
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/pwm_generator.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/pwm_generator.v
+!i122 1
+L0 20 27
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/pwm_generator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/pwm_generator.v|
+!i113 1
+R6
+R7
+R8
+vt1a_fs_pwm_bdf
+R1
+!i10b 1
+!s100 QmYW6@Qcm;YRX0Ih`S<Jl3
+R2
+IYVg9k<GkWEkn]:3B2L6mS2
+R3
+R0
+w1695470308
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/t1a_fs_pwm_bdf.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/t1a_fs_pwm_bdf.v
+!i122 0
+L0 20 35
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/t1a_fs_pwm_bdf.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/t1a_fs_pwm_bdf.v|
+!i113 1
+R6
+R7
+R8
+vtb
+R1
+!i10b 1
+!s100 ]58QFm9M=bVik3dYP1ggf1
+R2
+Ic1bfXKgTfndB0Ak6OMRhJ3
+R3
+R0
+w1695282146
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim/tb.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim/tb.v
+!i122 3
+L0 4 93
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1A/t1a_fs_pwm/simulation/modelsim
+R8

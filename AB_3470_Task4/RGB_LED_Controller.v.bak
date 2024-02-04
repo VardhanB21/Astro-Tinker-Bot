@@ -1,0 +1,52 @@
+module RGB_LED_Controller (
+    input clk,
+    input rst,
+    input [1:0] color_select,
+    output reg red_output1,
+    output reg green_output1,
+    output reg blue_output1,
+    output reg red_output2,
+    output reg green_output2,
+    output reg blue_output2,
+    output reg red_output3,
+    output reg green_output3,
+    output reg blue_output3
+);
+
+parameter OFF = 2'b00;
+parameter RED = 2'b01;
+parameter GREEN = 2'b10;
+parameter BLUE = 2'b11;
+
+reg [1:0] state;
+wire red_internal, green_internal, blue_internal;
+
+always @(posedge clk or posedge !rst) begin
+    if (!rst) begin
+        state <= OFF;
+        red_internal <= 1'b0;
+        green_internal <= 1'b0;
+        blue_internal <= 1'b0;
+    end else begin
+        state <= color_select;
+
+        // Update individual color outputs based on state
+        red_internal <= (state == RED) ? 1'b1 : 1'b0;
+        green_internal <= (state == GREEN) ? 1'b1 : 1'b0;
+        blue_internal <= (state == BLUE) ? 1'b1 : 1'b0;
+    end
+end
+
+assign red_output1 = red_internal;
+assign green_output1 = green_internal;
+assign blue_output1 = blue_internal;
+
+assign red_output2 = red_internal;
+assign green_output2 = green_internal;
+assign blue_output2 = blue_internal;
+
+assign red_output3 = red_internal;
+assign green_output3 = green_internal;
+assign blue_output3 = blue_internal;
+
+endmodule

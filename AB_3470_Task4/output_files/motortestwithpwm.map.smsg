@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at uart_tx.v(22): always construct contains both blocking and non-blocking assignments File: C:/Users/SIDDHI/Documents/EYANTRA/eyantra_practice2/linefollowuart/uart_tx.v Line: 22
+Warning (10268): Verilog HDL information at LineF.v(80): always construct contains both blocking and non-blocking assignments File: C:/Users/SIDDHI/Documents/EYANTRA/eyantra_practice2/linefollowuart/LineF.v Line: 80

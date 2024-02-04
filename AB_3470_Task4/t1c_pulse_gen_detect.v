@@ -1,0 +1,64 @@
+module t1c_pulse_gen_detect (
+    input clk_50M, reset, echo_rx,inptrigger,
+    output reg trigger, out,
+    output reg [21:0] pulses,
+    output reg [1:0] state
+);
+
+integer counter=0;
+
+parameter ST_warm=2'b00, ST_trigger=2'b01, ST_pulse=2'b10, ST_output=2'b11;
+
+//initial begin
+//    trigger = 0; out = 0; pulses = 0; state = ST_warm;
+//end
+
+
+ always @(posedge clk_50M) begin
+   if(reset) begin
+	out=0;
+	state=ST_warm;
+	counter=0;
+	pulses=0;
+	end
+	
+	else begin
+			case(state)
+				ST_warm:begin
+				  if(counter==49) state=ST_trigger;
+				end
+				ST_trigger:begin
+					trigger=1;
+					if(counter==549) state = ST_pulse; 
+				end
+				ST_pulse: begin
+				  trigger=0;
+				  if(echo_rx) pulses=pulses+22'b0000000000000000000001;
+				  if(counter==2000549) state = ST_output;
+				end
+				ST_output: begin
+							if(counter==2000550) begin
+							   if(pulses<=15000 && inptrigger) out=1;
+							   else out=0;
+							end
+							if(counter==2000569) begin
+							   state = ST_warm;
+								out=0;
+							end
+				end
+				 
+				 
+				 default: state = ST_warm;
+			endcase
+			
+			
+			counter=counter+1;
+				if (counter==2000570) begin
+				counter=0;
+				pulses=0;
+				end
+		end
+ end
+
+
+endmodule

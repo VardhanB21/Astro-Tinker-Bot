@@ -1,0 +1,59 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim
+vt1c_pulse_gen_detect
+Z1 !s110 1697478047
+!i10b 1
+!s100 VejPiUjP4<hJYHOdTd95>1
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+Icn?BkgLh2kiAbF<=N@?NZ0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1697478029
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/t1c_pulse_gen_detect.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/t1c_pulse_gen_detect.v
+!i122 0
+L0 21 65
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1697478047.000000
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/t1c_pulse_gen_detect.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/t1c_pulse_gen_detect.v|
+!i113 1
+Z6 o-vlog01compat -work work
+!s92 -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect
+Z7 tCvgOpt 0
+vtb
+R1
+!i10b 1
+!s100 2RQ1Im[@H_DRRfH<MN?1E1
+R2
+I@Oi[S1OBcfRWnjk0QK>_^2
+R3
+R0
+w1695569482
+8C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim/tb.v
+FC:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim/tb.v
+!i122 1
+L0 3 120
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim/tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim|C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim/tb.v|
+!i113 1
+R6
+!s92 -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/Task1/ab#3470_Task1C/t1c_pulse_gen_detect/simulation/modelsim
+R7

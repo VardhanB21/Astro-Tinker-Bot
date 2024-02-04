@@ -1,0 +1,16 @@
+Fitter Status : Successful - Wed Jan 24 23:07:14 2024
+Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+Revision Name : motortestwithpwm
+Top-level Entity Name : motortestwithpwm
+Family : Cyclone IV E
+Device : EP4CE22F17C6
+Timing Models : Final
+Total logic elements : 5,223 / 22,320 ( 23 % )
+    Total combinational functions : 2,123 / 22,320 ( 10 % )
+    Dedicated logic registers : 4,634 / 22,320 ( 21 % )
+Total registers : 4634
+Total pins : 23 / 154 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 84,224 / 608,256 ( 14 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 0 / 4 ( 0 % )

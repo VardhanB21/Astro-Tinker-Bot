@@ -1,0 +1,71 @@
+# Reading pref.tcl
+# do ripple_carry_adder_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/TASK\ 0/ripple_carry_adder {C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/full_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:48:09 on Sep 16,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder" C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/full_adder.v 
+# -- Compiling module full_adder
+# 
+# Top level modules:
+# 	full_adder
+# End time: 11:48:09 on Sep 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/TASK\ 0/ripple_carry_adder {C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/ripple_carry_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:48:09 on Sep 16,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder" C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/ripple_carry_adder.v 
+# -- Compiling module ripple_carry_adder
+# 
+# Top level modules:
+# 	ripple_carry_adder
+# End time: 11:48:09 on Sep 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/SIDDHI/Downloads/TASK\ 0/ripple_carry_adder {C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/tb_ripple_carry_adder.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:48:10 on Sep 16,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder" C:/Users/SIDDHI/Downloads/TASK 0/ripple_carry_adder/tb_ripple_carry_adder.v 
+# -- Compiling module tb_ripple_carry_adder
+# 
+# Top level modules:
+# 	tb_ripple_carry_adder
+# End time: 11:48:10 on Sep 16,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  tb_ripple_carry_adder
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" tb_ripple_carry_adder 
+# Start time: 11:48:11 on Sep 16,2023
+# Loading work.tb_ripple_carry_adder
+# Loading work.ripple_carry_adder
+# Loading work.full_adder
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+run -all
+# Load canceled
+run -all
+run -all
+add wave  \
+sim:/tb_ripple_carry_adder/a \
+sim:/tb_ripple_carry_adder/b \
+sim:/tb_ripple_carry_adder/c_out \
+sim:/tb_ripple_carry_adder/cin \
+sim:/tb_ripple_carry_adder/sum
+run -all
+run -all
+# End time: 12:01:36 on Sep 16,2023, Elapsed time: 0:13:25
+# Errors: 0, Warnings: 0

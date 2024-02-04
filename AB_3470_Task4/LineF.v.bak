@@ -1,0 +1,51 @@
+module LineF (
+  input clk,
+  input rst,
+  input [11:0] left_sensor,
+  input [11:0] center_sensor,
+  input [11:0] right_sensor,
+  output [3:0] left_motor,
+  output [3:0] right_motor,
+  output left_motor_2,
+  output right_motor_2
+);
+
+  // Local temporary variables
+  reg temp_left_motor, temp_right_motor;
+
+  // Line follower logic
+  always @(posedge clk or posedge !rst) begin
+    if (!rst) begin
+      temp_left_motor <= 4'b0;
+      temp_right_motor <= 4'b0;
+    end else begin
+      // Check sensor values and decide actions
+      if (center_sensor > left_sensor && center_sensor > right_sensor) begin
+        // Center sensor is higher, move forward
+        temp_left_motor <= 4'b0100;
+        temp_right_motor <= 4'b0100;
+      end else if (left_sensor > right_sensor) begin
+        // Left sensor is higher, move left
+        temp_left_motor <= 4'b0;
+        temp_right_motor <= 4'b1000;
+      end else if (right_sensor > left_sensor) begin
+        // Right sensor is higher, move right
+        temp_left_motor <= 4'b1000;
+        temp_right_motor <= 4'b0;
+      end else begin
+        // All sensors are active or at the same level, stop
+        temp_left_motor <= 4'b0;
+        temp_right_motor <= 4'b0;
+      end
+    end
+  end
+
+  // Assign temporary values to outputs
+  assign left_motor = temp_left_motor;
+  assign right_motor = temp_right_motor;
+
+  // Negative terminals set to low
+  assign left_motor_2 = 1'b0;
+  assign right_motor_2 = 1'b0;
+
+endmodule
