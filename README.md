@@ -1,11 +1,13 @@
 # AstroTinker Bot Project
 
-![AstroTinker Bot](link-to-bot-image)
-![Arena](link-to-arena-image)
-
 ## Overview
 
 The AstroTinker Bot project is a comprehensive initiative aimed at constructing a fully functional robot using an FPGA (Field Programmable Gate Array) as its core. The project involves the design, implementation, and testing of a sophisticated CPU architecture using Verilog HDL to leverage the parallel processing capabilities of FPGAs. The AstroTinker Bot is equipped with sensors and actuators for navigation and interaction within an arena, including the ability to perceive its environment and manipulate objects from an electronics warehouse. Wireless communication is utilized for information exchange with a central hub.
+
+<div style="text-align: center;">
+  <img src="bot1.jpeg" alt="AstroTinker Bot" style="border: 3px solid #ddd; border-radius: 4px; padding: 5px; width: 45%; height: auto; margin: 30px;">
+  <img src="bot2.jpeg" alt="AstroTinker Bot" style="border: 3px solid #ddd; border-radius: 4px; padding: 5px; width: 45%; height: auto; margin: 30px;">
+</div>
 
 ## Project Structure
 
@@ -65,8 +67,6 @@ To use the AstroTinker Bot:
 1. **Initialization:** Power on the FPGA and initialize the system.
 2. **Operation:** Use the control algorithms to navigate the arena, perceive the environment, and manipulate objects.
 3. **Communication:** Monitor and control the robot through the wireless communication interface, ensuring real-time interaction with the central hub.
-
-
 
 ### 11. RISC-V CPU Design for Path Planning
 In this task, teams need to design a RISC-V CPU capable of executing the developed path planning algorithm from the previous task:
